@@ -1,14 +1,16 @@
 import styled from 'styled-components'
 import { ElementLinkProps, MenuProps } from '../types/propsStyle'
+import { Link } from "react-router-dom"
 
 export const NavContainer = styled.div`
     border-bottom: solid 4px rgb(127, 141, 170);
     background-color: white;
     font-family: 'Montserrat', sans-serif;
-    animation: fateNav 600ms ease;
+    animation: fateNav 1.5s ease;
     @keyframes fateNav {
         0%{
             transform: translateY(-4.5rem);
+            opacity: 0;
         }
         100%{
             transform: translateY(0px);
@@ -81,7 +83,7 @@ export const NavElement = styled.li`
     }
 `
 
-export const ElementLink = styled.a<ElementLinkProps>`
+export const ElementLink = styled(Link)<ElementLinkProps>`
     text-decoration: none;
     display: inline-block;
     height: 100%;

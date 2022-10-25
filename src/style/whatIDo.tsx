@@ -6,19 +6,32 @@ export const Tecnologies = styled.div`
     flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(6rem,1fr));
-    gap: 1rem;
+    place-content: center;
+    gap: 0.5rem;
 `
 
 export const IDO = styled.div`
     font-family: 'Montserrat', sans-serif;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: royalblue;
+    padding: 2rem;
+    animation: oppa 1.5s ease;
+    max-width: 1200px;
+    margin: auto;
+    @keyframes oppa {
+        0%{
+            transform: translateY(100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+        }
+    }
+    @media screen and (max-width:900px) {
+        gap: 0.5rem;
+    }
 `
 export const IDOTitle = styled.h1`
     text-align: center;
+    font-weight: 100;
 `
 
 export const Tec = styled.span<TecProps>`
@@ -61,21 +74,14 @@ export const EyeB = styled.g`
 
 export const What = styled.div`
     display: flex;
-    max-width: 1200px;
     margin: auto;
-    background-color: green;
+    gap: 1rem;
     @media screen and (max-width:900px) {
         flex-direction: column;
     }
 `
 export const Svg = styled.div`
-    background-color: red;
-    /* flex: 1 1 20rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; */
-    width: 600px;
-    height: 600px;
+    flex: 4 1 30rem;
 `
 export const  RD = styled.radialGradient`
     
@@ -85,19 +91,19 @@ export const Float = styled.g`
     animation: flotante 6s infinite;
     @keyframes flotante {
         0% {
-            transform: translateY(0px) scale(1.1);
+            transform: translateY(0px) scale(1.03);
         }
         50% {
             transform: translateY(-5px) scale(1);
         }
         100% {
-            transform: translateY(0px) scale(1.1);
+            transform: translateY(0px) scale(1.03);
         }
     }
 `
 
 export const WhatInfo = styled.div`
-    flex: 1 1 10rem;
+    flex: 1 1 25rem;
     display: flex;
     gap: 2rem;
     flex-direction: column;
@@ -107,7 +113,7 @@ export const Do = styled.ul`
     display: flex;
     flex-direction: column;
     padding: 0rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin: 0rem;
     flex: 1 1 20rem;
 `
@@ -120,5 +126,5 @@ export const I = styled.li`
 export const Title = styled.span`
     align-self: center;
     font-size: 1.8rem;
-    font-weight: bold;
+    text-align: center;
 `

@@ -32,7 +32,7 @@ export const IntroInfo = styled.div`
     gap: 1.2rem;
     flex: 4 1 20rem;
     color: rgb(127, 141, 170);
-    animation: fade 600ms ease;
+    animation: fade 1.5s ease;
     @media screen and (max-width:900px){
         flex: 0 1 10rem;
         text-align: center;
@@ -76,7 +76,7 @@ export const IntroImg = styled.div`
     align-items: center;
     overflow: hidden;
     background-color: rgb(233, 233, 233);
-    animation: fadeFoto 600ms ease;
+    animation: fadeFoto 1.5s ease;
     &::before {
         content: '';
         position: absolute;

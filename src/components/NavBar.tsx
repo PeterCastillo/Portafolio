@@ -1,22 +1,26 @@
 import { useState } from "react"
-import { Bar, ElementLink, Img, Logo, MenuBtn, Nav, Navbar, NavContainer, NavElement, Nombre } from "../style/navbar"
+import { Bar, ElementLink, MenuBtn, Nav, Navbar, NavContainer, NavElement, Nombre } from "../style/navbar"
 
 const Navegation = [
     {
         name: "Home",
-        color: "rgb(25, 85, 188);"
+        color: "rgb(25, 85, 188);",
+        to: "/"
     },
     {
-        name: "About Me",
-        color: "#A1CF6B"
+        name: "Educacion",
+        color: "#A1CF6B",
+        to: "/Educacion"
     },
     {
-        name: "Skills",
-        color: "#FFA987"
+        name: "Proyectos",
+        color: "#FFA987",
+        to: "/Proyectos"
     },
     {
-        name: "Proyects",
-        color: "#FADF7F"
+        name: "Contacto",
+        color: "#FADF7F",
+        to: "/Contacto"
     },
 ]
 const nombre = "<PcDev/>"
@@ -37,7 +41,7 @@ const NavBar = () => {
                 </Bar>
                 <Nav toggle={toggle}>
                     {Navegation.map(item =>(
-                        <NavElement><ElementLink color={item.color} href="">{item.name}</ElementLink></NavElement>
+                        <NavElement key={item.color}><ElementLink color={item.color} to={item.to} >{item.name}</ElementLink></NavElement>
                     ))}
                 </Nav>
             </Navbar>
