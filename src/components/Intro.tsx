@@ -17,7 +17,7 @@ const Intro = () => {
                         <Red color="white" back="rgb(25, 85, 188)"><FaLinkedinIn/></Red>
                         <Red color="white" back="rgb(250,0,0)"><SiGmail/></Red>
                     </Redes>
-                    <Contact>Contactame</Contact>
+                    <Contact to={"/Contacto"}>Contactame</Contact>
                 </IntroInfo>
                 <IntroImg>
                     <ImgIntro src={peter} alt="" />

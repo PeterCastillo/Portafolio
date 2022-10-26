@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { RedesProps } from "../types/propsStyle";
+import { Link } from "react-router-dom"
 
 export const IntroContainer = styled.div`
     align-items: center;
@@ -143,7 +144,7 @@ export const Red = styled.div<RedesProps>`
     }
 `
 
-export const Contact = styled.button`
+export const Contact = styled(Link)`
     border: none;
     background-color: rgb(25, 85, 188);
     padding: 0.8rem;
@@ -151,6 +152,8 @@ export const Contact = styled.button`
     font-weight: bold;
     border-radius: 0.5rem;
     max-width: 20rem;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
     @media screen and (max-width:900px){
         align-self: center;
