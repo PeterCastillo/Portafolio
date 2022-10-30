@@ -14,15 +14,12 @@ export const IDO = styled.div`
     font-family: 'Montserrat', sans-serif;
     padding: 2rem;
     animation: oppa 1.5s ease;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     @keyframes oppa {
         0%{
             transform: translateY(100px);
             opacity: 0;
-        }
-        100%{
-            transform: translateY(0px);
         }
     }
     @media screen and (max-width:900px) {
@@ -31,7 +28,9 @@ export const IDO = styled.div`
 `
 export const IDOTitle = styled.h1`
     text-align: center;
-    font-weight: 100;
+    font-weight: bold;
+    font-size: 2rem;
+    color: rgb(52, 52, 52);
 `
 
 export const Tec = styled.span<TecProps>`
@@ -125,6 +124,8 @@ export const I = styled.li`
 `
 export const Title = styled.span`
     align-self: center;
-    font-size: 1.8rem;
+    font-size: 2rem;
     text-align: center;
+    font-weight: bold;
+    color: rgb(52, 52, 52);
 `

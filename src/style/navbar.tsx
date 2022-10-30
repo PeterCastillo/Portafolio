@@ -18,7 +18,7 @@ export const NavContainer = styled.div`
     }
 `
 export const  Navbar = styled.nav<MenuProps>`
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     justify-content: space-between;
     height: 4.5rem;

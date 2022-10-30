@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { RedesProps } from "../types/propsStyle";
+import { RedesContactoProps, RedesProps } from "../types/propsStyle";
 import { Link } from "react-router-dom"
 
 export const IntroContainer = styled.div`
@@ -11,7 +11,7 @@ export const IntroContainer = styled.div`
 `
 
 export const SeccionIntro = styled.div`
-    max-width: 1200px;
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,10 +57,11 @@ export const Colored = styled.span`
 ` 
 export const Do = styled.span`
 `
-export const Redes = styled.div`
+export const Redes = styled.div<RedesContactoProps>`
     font-size: 3rem;
     display: flex;
     gap: 0.5rem;
+    align-self: ${props => props.type};
     @media screen and (max-width:900px){
         align-self: center;
     }
@@ -124,7 +125,7 @@ export const ImgIntro = styled.img`
     border-radius: 0.5rem;
     z-index: 25;
 `
-export const Red = styled.div<RedesProps>`
+export const Red = styled.a<RedesProps>`
     background-color: black;
     border-radius: 50%;
     display: flex;

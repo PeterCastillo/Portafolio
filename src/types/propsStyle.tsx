@@ -15,3 +15,10 @@ export interface TecProps {
     color: string
     size: string
 }
+
+export interface RedesContactoProps {
+    type: string
+}
+export interface ContractoIntroProps {
+    type: string
+}
