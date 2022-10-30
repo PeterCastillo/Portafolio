@@ -35,7 +35,7 @@ const Contacto = () => {
                         aplicar mis conocimientos sobre React, ademas de aprender de la personas que me rodeen.  
                     </Info>
                     <Info>
-                        En uno de mis mayores hobbies es el gimnasio, me gusta ir todos los dias 
+                        Uno de mis mayores hobbies es el gimnasio, me gusta ir todos los dias 
                         para despejar la mente y relajarme. 
                     </Info>
                 </IntroAboutInfo>
