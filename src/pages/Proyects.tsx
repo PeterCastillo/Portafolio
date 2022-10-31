@@ -12,7 +12,7 @@ const Proyects = () => {
                 <ProyectsIntroInfo>
                     <Title>Proyectos</Title>
                     <Info>
-                        Aqui podras encontrar algunos de mis proyectos. Todos los proyectos son responsivos, ademas si deseas ver el codigo de alguno de ellos los hacer clickeando en el icono de GitHub de cada proyecto.
+                        Aqui podras encontrar algunos de mis proyectos. Todos los proyectos son responsivos, ademas si deseas ver el codigo de alguno de ellos lo podras hacer clickeando en el icono de GitHub de cada proyecto.
                     </Info>
                 </ProyectsIntroInfo>
             </ProyectsIntro>

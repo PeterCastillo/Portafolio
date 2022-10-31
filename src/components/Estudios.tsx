@@ -44,7 +44,7 @@ const grades: Array<EstudioTypes> = [
 const Estudios = () => {
     return (
         <EstudiosStyle>
-            <Title>Degrees Received</Title>
+            <Title>Estudios</Title>
             <EstudiosContainer>
                 {grades.map(item =>(
                     <Estudio info={item}/>

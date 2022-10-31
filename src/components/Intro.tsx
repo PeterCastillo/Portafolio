@@ -9,7 +9,7 @@ const Intro = () => {
                 <IntroInfo>
                     <Saludo>Hola</Saludo>
                     <span>Soy<Colored> Peter Castillo.</Colored></span>
-                    <span><Colored>Frontend Developer </Colored> enfocado en JavaScript and<Colored> React.</Colored></span>
+                    <span><Colored>Frontend Developer </Colored> enfocado en JavaScript y<Colored> React.</Colored></span>
                     <Do>Constantemente aprendiendo🤓📚.</Do>
                     <RedesContacto type={""}/>
                     <Contact to={"/Contacto"}>Contactame</Contact>

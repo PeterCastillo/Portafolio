@@ -12,7 +12,7 @@ const Educacion = () => {
                 <EducationInfo>
                     <Title>Educacion</Title>
                     <Info>
-                        Siempre estoy aprendiendo cosas nuevas que me ayuden a mejorar la experiencia de usuario, ademas de siempre tratar de imnovar en cada proyecto 
+                        Siempre estoy aprendiendo cosas nuevas que me ayuden a mejorar la experiencia de usuario, ademas de siempre tratar de innovar en cada proyecto 
                         proyecto que realizo.
                     </Info>
                 </EducationInfo>

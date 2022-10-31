@@ -13,7 +13,7 @@ const Contacto = () => {
                 <IntroInfo>
                     <Title>Contactame</Title>
                     <Info>
-                        Puedes contactar por cualquieras de los medios mencionados abajo. Tratare de resposnderte tan pronto como sea posible. Estare encantado de recibir sujerencias. 
+                        Puedes contactarme por cualquieras de los medios mencionados abajo. Tratare de resposnderte tan pronto como sea posible. Estaria encantado de recibir cualquier sujerencia. 
                     </Info>
                     <RedesContacto type={"center"}/>
                     <BtnCV>Descargar CV</BtnCV>

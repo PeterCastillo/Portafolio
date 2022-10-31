@@ -10,7 +10,7 @@ const ProyectosTodos = [
     {
         img: PokeApi,
         title: "PokeApi",
-        info: "Desarrolado utilizando la API de Pokemon GO, implementando Redux para la como la comunicancon entre componente.",
+        info: "Desarrollada utilizando la API de Pokemon GO, implementando Redux para la como la comunicancon entre componente.",
         tecs:[
             <SiReact/>,
             <SiTypescript/>,
@@ -23,7 +23,7 @@ const ProyectosTodos = [
     {
         img: RickAPI,
         title: "Rick & Morty Client",
-        info: "Desarrollado utilizando la API de Rick&Morty, implementando Redux para mejorar el performance de la pagina al usar FireBase.",
+        info: "Desarrollada utilizando la API de Rick&Morty, implementando Redux para mejorar el performance de la pagina al usar FireBase.",
         tecs:[
             <SiReact/>,
             <SiJavascript/>,
@@ -37,7 +37,7 @@ const ProyectosTodos = [
     {
         img: PeliCorn,
         title: "PeliCorn",
-        info: "Primera pagina desarrollada en React, utilizando la API de CountryAPI y SASS para los estilar la pagina.",
+        info: "Desarrollada utilizando la API de TheMovieDB, enfocada en ser una pagina SPA mediante eventos en el hash.",
         tecs:[
             <SiJavascript/>,
             <SiCss3/>,
@@ -49,7 +49,7 @@ const ProyectosTodos = [
     {
         img: CountryApi,
         title: "CountryApi",
-        info: "Lorem ipsum dolor si. Quam exercitationem rem beatae ipsum blanditiis iusto soluta. Asperiores non maiores officia.",
+        info: "Primera pagina desarrollada en React, utilizando la API de CountryAPI y SASS para los estilar la pagina.",
         tecs:[
             <SiReact/>,
             <SiJavascript/>,
