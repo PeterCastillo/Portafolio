@@ -79,6 +79,7 @@ export const EstudioType = styled.span`
 export const EstudioDate = styled.div`
      display: flex;
      justify-content: space-between;
+     align-items: center;
 `
 export const EstudioEstudio = styled.span`
     font-size: 1.5rem;
@@ -117,4 +118,15 @@ export const EstudioThing = styled.li`
     list-style: none;
     font-size: 1.1rem;
     color: rgb(127,141,170);
+`
+export const Fecha = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+    max-width: 6rem;
+    @media screen and (max-width:900px) {
+        flex-direction: column-reverse;
+    }
 `

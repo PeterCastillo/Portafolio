@@ -26,7 +26,7 @@ export const  Navbar = styled.nav<MenuProps>`
     @media screen and (max-width:680px){
         ${props => props.toggle ? "height: auto;": ""}
         flex-direction: column;
-        transition: height 5s ease;
+
     }
 `
 

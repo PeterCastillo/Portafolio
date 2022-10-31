@@ -6,7 +6,7 @@ const Certificado = ({ info }:CertificadoProps) => {
     return (
         <CertificadoStyle>
             <CertificadoLogo>
-                <LogoImg><ImgEstudio src={info.img} alt="" /></LogoImg>
+                <LogoImg><ImgEstudio src={info.img} alt={info.type} /></LogoImg>
             </CertificadoLogo>
             <CertificadoInfo>
                 <CertificadoTitle>{info.type}</CertificadoTitle>

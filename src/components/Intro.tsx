@@ -1,5 +1,5 @@
 import peter from "../assets/Peter.jpg"
-import { Colored, Contact, Do, ImgIntro, IntroContainer, IntroImg, IntroInfo, Red, Redes, Saludo, SeccionIntro } from "../style/intro"
+import { Colored, Contact, Do, ImgIntro, IntroContainer, IntroImg, IntroInfo, Saludo, SeccionIntro } from "../style/intro"
 import RedesContacto from "./RedesContacto"
 
 const Intro = () => {

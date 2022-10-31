@@ -1,5 +1,4 @@
 import { Img, Info, Links, ProyectImg, ProyectoInfo, ProyectStyle, ProyectTecs, Tec, Title } from "../style/proyecto"
-import { TbBrandReactNative } from "react-icons/tb"
 import { ProyectoProps } from "../types/props"
 import { FaGithubSquare , FaExternalLinkSquareAlt } from "react-icons/fa"
 

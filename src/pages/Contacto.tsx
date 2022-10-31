@@ -1,5 +1,5 @@
 import RedesContacto from "../components/RedesContacto"
-import { AboutDetails, AboutInfo, AboutSvg, BtnCV, ContactoContainer, ContactoIntro, Info, IntroAboutInfo, IntroImg, IntroInfo, TitleAbout } from "../style/contacto"
+import { BtnCV, ContactoContainer, ContactoIntro, Info, IntroAboutInfo, IntroImg, IntroInfo } from "../style/contacto"
 import { Title } from "../style/whatIDo"
 
 const Contacto = () => {

@@ -41,7 +41,7 @@ const NavBar = () => {
                 </Bar>
                 <Nav toggle={toggle}>
                     {Navegation.map(item =>(
-                        <NavElement key={item.color}><ElementLink color={item.color} to={item.to} >{item.name}</ElementLink></NavElement>
+                        <NavElement key={item.color} onClick={handleToggle}><ElementLink color={item.color} to={item.to} >{item.name}</ElementLink></NavElement>
                     ))}
                 </Nav>
             </Navbar>

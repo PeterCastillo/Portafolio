@@ -1,4 +1,4 @@
-import { EstudioDate, EstudioDetails, EstudioEstudio, EstudioInfo, EstudioList, EstudioLogo, EstudioPlace, EstudioSpecificInfo, EstudioStyle, EstudioThing, EstudioType, EstudioWeb, ImgEstudio } from "../style/estudio"
+import { EstudioDate, EstudioDetails, EstudioEstudio, EstudioInfo, EstudioList, EstudioLogo, EstudioPlace, EstudioSpecificInfo, EstudioStyle, EstudioThing, EstudioType, EstudioWeb, Fecha, ImgEstudio } from "../style/estudio"
 import { EstudioProps } from "../types/estudio"
 
 const Estudio = ({ info }:EstudioProps) =>{
@@ -6,13 +6,17 @@ const Estudio = ({ info }:EstudioProps) =>{
     return (
         <EstudioStyle>
             <EstudioPlace>
-                <EstudioLogo><ImgEstudio src={info.logo} alt="" /></EstudioLogo>
+                <EstudioLogo><ImgEstudio src={info.logo} alt={info.estudioName} /></EstudioLogo>
             </EstudioPlace>
             <EstudioInfo>
                 <EstudioDetails>
                     <EstudioDate>
                         <EstudioEstudio>{info.estudioName}</EstudioEstudio>
-                        <span>{info.estudioDate}</span>
+                        <Fecha>
+                            <span>{info.fechaInicio}</span>
+                            <span>-</span>
+                            <span>{info.fechaFinal}</span>
+                        </Fecha>
                     </EstudioDate>
                     <EstudioType>{info.estudioEspefic}</EstudioType>
                 </EstudioDetails>

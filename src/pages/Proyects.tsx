@@ -1,4 +1,3 @@
-import Proyecto from "../components/Proyecto"
 import Proyectos from "../components/Proyectos"
 import { Info, ProyectsContainer, ProyectsIntro, ProyectsIntroInfo, ProyectsSvg, Title } from "../style/proyects"
 
