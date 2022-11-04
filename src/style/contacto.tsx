@@ -42,7 +42,7 @@ export const Info = styled.p`
     padding: 0rem;
     margin: 0rem;
 `
-export const BtnCV = styled.button`
+export const BtnCV = styled.a`
     align-self: center;
     border: none;
     background-color: rgb(25, 85, 188);
@@ -53,6 +53,7 @@ export const BtnCV = styled.button`
     max-width: 20rem;
     font-size: 1.3rem;
     cursor: pointer;
+    text-decoration: none;
 `
 export const IntroAboutInfo = styled.div`
     flex: 1 1 25rem;
