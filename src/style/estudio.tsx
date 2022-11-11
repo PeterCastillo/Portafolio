@@ -125,7 +125,7 @@ export const Fecha = styled.div`
     align-items: center;
     justify-content: center;
     gap: 0.2rem;
-    max-width: 6rem;
+    max-width: 7rem;
     @media screen and (max-width:900px) {
         flex-direction: column-reverse;
     }

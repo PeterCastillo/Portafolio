@@ -23,8 +23,8 @@ const Estudio = ({ info }:EstudioProps) =>{
                 <EstudioSpecificInfo>
                     <EstudioList>
                         {
-                            info.estudioInfo.map(item => (
-                                <EstudioThing>- {item}</EstudioThing>
+                            info.estudioInfo.map((item,index) => (
+                                <EstudioThing key={index}>- {item}</EstudioThing>
                             ))
                         }
                     </EstudioList>

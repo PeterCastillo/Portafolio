@@ -133,10 +133,6 @@ export const MenuBtn = styled.div<MenuProps>`
     &::after {
         transform: ${props => props.toggle ? "rotate(-45deg) translate(3px ,3px)" : "translateY(8px)"}
     }
-    @media screen and (min-width:680px){
-        display: none;
-    }
-
 `
 
 
@@ -148,5 +144,13 @@ export const Bar = styled.div`
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+`
+
+export const BtnNavBar = styled.div`
+    cursor: pointer;
+    padding: 0.5rem;
+    @media screen and (min-width:680px){
+        display: none;
     }
 `

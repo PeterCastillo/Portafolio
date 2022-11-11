@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Bar, ElementLink, MenuBtn, Nav, Navbar, NavContainer, NavElement, Nombre } from "../style/navbar"
+import { Bar, BtnNavBar, ElementLink, MenuBtn, Nav, Navbar, NavContainer, NavElement, Nombre } from "../style/navbar"
 
 const Navegation = [
     {
@@ -37,7 +37,7 @@ const NavBar = () => {
             <Navbar toggle={toggle}>
                 <Bar>
                     <Nombre>{nombre}</Nombre>
-                    <MenuBtn  onClick={handleToggle} toggle={toggle}></MenuBtn>
+                    <BtnNavBar onClick={handleToggle}><MenuBtn toggle={toggle}></MenuBtn></BtnNavBar>
                 </Bar>
                 <Nav toggle={toggle}>
                     {Navegation.map(item =>(

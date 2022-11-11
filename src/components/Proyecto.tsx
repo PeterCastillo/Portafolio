@@ -11,8 +11,8 @@ const Proyecto = ({ info }:ProyectoProps) => {
                     <Title>{info.title}</Title>
                     <Info>{info.info}</Info>
                     <ProyectTecs>
-                        {info.tecs.map(item => (
-                            <Tec>
+                        {info.tecs.map((item,index) => (
+                            <Tec key={index}>
                                 {item}
                             </Tec>
                         ))}

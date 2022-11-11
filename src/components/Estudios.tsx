@@ -49,8 +49,8 @@ const Estudios = () => {
         <EstudiosStyle>
             <Title>Estudios</Title>
             <EstudiosContainer>
-                {grades.map(item =>(
-                    <Estudio info={item}/>
+                {grades.map((item,index) =>(
+                    <Estudio key={index} info={item}/>
                 ))}
             </EstudiosContainer>
         </EstudiosStyle>

@@ -20,8 +20,8 @@ const Cerftificados = () => {
             <Title>Certificados</Title>
             <CertificadosContainer>
                 {
-                    Cert.map(item => (
-                        <Certificado info={item}/>
+                    Cert.map((item,index) => (
+                        <Certificado key={index} info={item}/>
                     ))
                 }
             </CertificadosContainer>

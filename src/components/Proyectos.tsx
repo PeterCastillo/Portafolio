@@ -65,8 +65,8 @@ const Proyectos = () => {
     return (
         <ProyectosContainer>
             {
-                ProyectosTodos.map(item => (
-                    <Proyecto info={item}/>
+                ProyectosTodos.map((item,index) => (
+                    <Proyecto key={index} info={item}/>
                 ))
             }
         </ProyectosContainer>
