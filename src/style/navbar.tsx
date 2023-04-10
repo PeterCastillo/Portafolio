@@ -21,10 +21,11 @@ export const  Navbar = styled.nav<MenuProps>`
     max-width: 1300px;
     display: flex;
     justify-content: space-between;
-    height: 4.5rem;
+    max-height: 4.5rem;
     margin: auto;
+    transition: all 250ms ease-in-out;
     @media screen and (max-width:680px){
-        ${props => props.toggle ? "height: auto;": ""}
+        ${props => props.toggle && "max-height: 50rem;"}
         flex-direction: column;
 
     }
@@ -65,11 +66,16 @@ export const Nav = styled.ul<MenuProps>`
     gap: 0.6rem;
     font-size: 1.20rem;
     @media screen and (max-width:680px) {
-        ${props => props.toggle ? "": "transform: translateY(-100%)"};
-        ${props => props.toggle ? "transition: all 350ms ease;": ""};
+        /* ${props => !props.toggle && "transform: translateY(-100%)"}; */
+        /* ${props => props.toggle && "transition: all 200ms ease-out;"}; */
+        max-height: 0rem;
+        overflow: hidden;
+        transition: all 150ms ease-in-out;
+        ${props => props.toggle && "max-height: 50rem;"}
         flex-direction: column;
         gap: 1rem;
-        padding: 0.8rem 2rem;
+        padding: 0rem 2rem;
+        ${props => props.toggle && "padding: 0.8rem 2rem;"}
         margin: 0rem;
     }
 `
