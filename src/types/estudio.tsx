@@ -6,7 +6,10 @@ export interface EstudioProps {
 export interface Estudio {
     logo: string
     estudioName: string
-    estudioEspefic: string
+    estudioEspefic: {
+        name: string
+        logo: JSX.Element;
+    }[]
     estudioInfo: Array<string>,
     estudioWeb:string
     fechaInicio: string

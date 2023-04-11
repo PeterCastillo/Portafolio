@@ -1,4 +1,3 @@
-import RedesContacto from "../components/RedesContacto"
 import { BtnCV, ContactoContainer, ContactoIntro, Info, IntroAboutInfo, IntroImg, IntroInfo } from "../style/contacto"
 import { Title } from "../style/whatIDo"
 import CV from "../assets/PeterCastillo_CV.pdf"
@@ -16,7 +15,6 @@ const Contacto = () => {
                     <Info>
                         Puedes contactarme por cualquieras de los medios mencionados abajo. Tratare de resposnderte tan pronto como sea posible. Estaria encantado de recibir cualquier sujerencia. 
                     </Info>
-                    <RedesContacto type={"center"}/>
                     <BtnCV download={"PeterCastillo_CV"} href={CV}>Descargar CV</BtnCV>
                 </IntroInfo>
             </ContactoIntro>

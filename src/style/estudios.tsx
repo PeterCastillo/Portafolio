@@ -4,14 +4,18 @@ export const EstudiosStyle = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Inter", sans-serif;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 5rem;
+    padding: 1rem;
 `
 export const Title = styled.span`
     font-size: 2rem;
-    align-self: center;
-    font-weight: bold;
-    color: rgb(52, 52, 52);
+    align-self: flex-start;
+    font-weight: 900;
+    color:  rgb(25, 85, 188);
 `
 export const EstudiosContainer = styled.div`
-    padding: 1rem;
+    /* padding: 1rem; */
 `
