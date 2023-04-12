@@ -4,7 +4,6 @@ import { FaGithubSquare , FaExternalLinkSquareAlt } from "react-icons/fa"
 
 const Proyecto = ({ info }:ProyectoProps) => {
     return (
-        <div>
             <ProyectStyle>
                 <ProyectImg><Img src={info.img} alt={info.title} /></ProyectImg>
                 <ProyectoInfo>
@@ -23,7 +22,6 @@ const Proyecto = ({ info }:ProyectoProps) => {
                     </Links>
                 </ProyectoInfo>
             </ProyectStyle>
-        </div>
     )
 }
 

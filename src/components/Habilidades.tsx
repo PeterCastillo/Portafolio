@@ -133,7 +133,7 @@ const Habilidad = ({ info }: { info: IHabilidad }) => {
       <Skills showItems={showItems}>
         {info.habilidades.map((item, index) => {
           return (
-            <div>
+            <div key={index}>
               <span>{item.name}</span>
               {item.logo}
             </div>
@@ -150,7 +150,7 @@ const Habilidades = () => {
       <Title>Habilidades</Title>
       <HabilidadesList>
         {habilidades.map((item, index) => (
-          <Habilidad info={item} />
+          <Habilidad info={item} key={index} />
         ))}
       </HabilidadesList>
     </HabilidadesContainer>

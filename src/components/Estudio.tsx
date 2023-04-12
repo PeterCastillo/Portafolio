@@ -36,7 +36,7 @@ const Estudio = ({ info }: EstudioProps) => {
           </EstudioDate>
           <EstudioType>
             {info.estudioEspefic.map((item, i) => (
-              <div>
+              <div key={i}>
                 <span>{item.name}</span>
                 {item.logo}
               </div>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const ProyectStyle = styled.div`
     display: flex;
-    background-color:rgb(220, 228, 242) ;
+    background-color:rgba(241, 241, 241, 0.664);
     padding: 1rem;
     border-radius: 0.5rem;
     gap: 1rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     color: rgb(52, 52, 52);
     /* -webkit-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
@@ -16,6 +16,7 @@ export const ProyectStyle = styled.div`
     -moz-box-shadow: 0px 0px 15px 0px rgba(127,141,170,1);
     box-shadow: 0px 0px 15px 0px rgba(127,141,170,1);
     } */
+    user-select: none;
     @media screen and (max-width:875px) {
         flex-direction: column;
     }

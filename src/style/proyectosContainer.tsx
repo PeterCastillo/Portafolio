@@ -1,14 +1,28 @@
 import styled from "styled-components";
 
-export const  ProyectosContainer = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(40rem,1fr));
-    gap: 1rem;
-    max-width: 1300px;
+export const Container = styled.div`
+    max-width: 1000px;
     margin: auto;
-    gap: 1rem;
     padding: 1rem;
-    @media screen and (max-width:875px) {
-        grid-template-columns: repeat(auto-fill, minmax(18rem,1fr))
-    }
+    font-family: "Inter", sans-serif;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 `
+export const Title = styled.span`
+     font-size: 2rem;
+    align-self: flex-start;
+    font-weight: 900;
+    color:  rgb(25, 85, 188);
+`
+export const ProyectosContainer = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+  gap: 1rem;
+  margin: auto;
+  gap: 1rem;
+  @media screen and (max-width: 875px) {
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  }
+`;

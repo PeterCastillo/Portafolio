@@ -16,6 +16,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { CgNotes } from "react-icons/cg";
 import Estudios from "./Estudios";
 import Habilidades from "./Habilidades";
+import Proyectos from "./Proyectos";
 
 
 const Intro = () => {
@@ -54,6 +55,7 @@ const Intro = () => {
       </SeccionIntro>
       <Estudios/>
       <Habilidades/>
+      <Proyectos/>
     </IntroContainer>
   );
 };
