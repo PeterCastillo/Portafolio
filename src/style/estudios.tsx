@@ -7,8 +7,8 @@ export const EstudiosStyle = styled.section`
     font-family: "Inter", sans-serif;
     max-width: 1000px;
     margin: auto;
-    margin-top: 5rem;
     padding: 1rem;
+    padding-top: 5rem;
 `
 export const Title = styled.span`
     font-size: 2rem;

@@ -59,7 +59,7 @@ const ProyectosTodos = [
 
 const Proyectos = () => {
   return (
-    <Container>
+    <Container id="proyectos">
         <Title>Proyectos</Title>
       <ProyectosContainer>
         {ProyectosTodos.map((item, index) => (

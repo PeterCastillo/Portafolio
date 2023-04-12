@@ -2,11 +2,7 @@ import styled from "styled-components";
 
 export const IntroContainer = styled.div`
   align-items: center;
-  margin-top: 5rem;
-  padding: 5rem 0rem;
-  @media screen and (max-width: 900px) {
-    padding: 3rem 0rem;
-  }
+  padding-top: 10rem;
 `;
 
 export const SeccionIntro = styled.div`
@@ -36,8 +32,8 @@ export const Foto = styled.div`
     width: 100%;
     border-radius: 5px;
     @media screen and (max-width: 500px) {
-        width: 100%;
-  }
+      width: 100%;
+    }
   }
 `;
 
@@ -62,9 +58,7 @@ export const Text = styled.span`
   font-weight: 400;
   line-height: 1.625em;
   width: 100%;
-
 `;
-
 
 export const RedesBtns = styled.div`
   display: flex;
@@ -74,22 +68,24 @@ export const RedesBtns = styled.div`
     flex-wrap: wrap;
   }
   gap: 0.5rem;
-  div {
-    white-space: nowrap;
-    padding: 10px 15px;
-    background-color: rgb(25, 85, 188);
-    border-radius: 5px;
-    display: flex;
-    gap: 1rem;
-    cursor: pointer;
-    user-select: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    &:hover {
-      transition: all 150ms ease-in-out;
-      background-color: rgba(25, 85, 188, 0.788);
-    }
+`;
+
+export const Cv = styled.a`
+  white-space: nowrap;
+  padding: 10px 15px;
+  background-color: rgb(25, 85, 188);
+  border-radius: 5px;
+  display: flex;
+  gap: 1rem;
+  cursor: pointer;
+  user-select: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  &:hover {
+    transition: all 150ms ease-in-out;
+    background-color: rgba(25, 85, 188, 0.788);
   }
 `;
 

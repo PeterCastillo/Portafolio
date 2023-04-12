@@ -57,7 +57,7 @@ const grades: Array<EstudioTypes> = [
 
 const Estudios = () => {
   return (
-    <EstudiosStyle>
+    <EstudiosStyle id="estudios">
       <Title>Estudios</Title>
       <EstudiosContainer>
         {grades.map((item, index) => (

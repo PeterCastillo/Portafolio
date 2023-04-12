@@ -1,12 +1,20 @@
 import NavBar from "./components/NavBar"
-import { Outlet } from "react-router-dom"
 import Footer from "./components/Footer"
+import Intro from "./components/Intro"
+import Experiencia from "./components/Experiencia"
+import Estudios from "./components/Estudios"
+import Habilidades from "./components/Habilidades"
+import Proyectos from "./components/Proyectos"
 
 function App() {
   return (
     <div>
       <NavBar/>
-      <Outlet/>
+      <Intro/>
+      <Experiencia/>
+      <Estudios/>
+      <Habilidades/>
+      <Proyectos/>
       <Footer/>
     </div>
   )

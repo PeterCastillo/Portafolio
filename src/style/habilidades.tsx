@@ -5,7 +5,7 @@ export const HabilidadesContainer = styled.div`
   padding: 1rem;
   margin: auto;
   font-family: "Inter", sans-serif;
-  margin-top: 5rem;
+  padding-top: 5rem;
 `;
 export const Title = styled.span`
   color: rgb(25, 85, 188);

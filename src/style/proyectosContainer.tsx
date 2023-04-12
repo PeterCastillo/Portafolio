@@ -5,7 +5,7 @@ export const Container = styled.div`
     margin: auto;
     padding: 1rem;
     font-family: "Inter", sans-serif;
-    margin-top: 5rem;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;

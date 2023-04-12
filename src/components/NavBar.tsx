@@ -11,30 +11,40 @@ import {
   Nombre,
 } from "../style/navbar";
 
-const Navegation = [
-  {
-    name: "Home",
-    color: "rgb(25, 85, 188);",
-    to: "/",
-  },
-  {
-    name: "Educacion",
-    color: "#A1CF6B",
-    to: "/Educacion",
-  },
-  {
-    name: "Proyectos",
-    color: "#FFA987",
-    to: "/Proyectos",
-  },
-  {
-    name: "Contacto",
-    color: "#FADF7F",
-    to: "/Contacto",
-  },
-];
 const nombre = "<PcDev/>";
 const NavBar = () => {
+  const [setting, setSetting] = useState([
+    {
+      name: "Contacto",
+      color: "rgb(25, 85, 188);",
+      to: "contact",
+      onshow: false,
+    },
+    {
+      name: "Experiencia",
+      color: "#A1CF6B",
+      to: "experiencia",
+      onshow: false,
+    },
+    {
+      name: "Estudios",
+      color: "#FFA987",
+      to: "estudios",
+      onshow: false,
+    },
+    {
+      name: "Habilidades",
+      color: "#FADF7F",
+      to: "habilidades",
+      onshow: false,
+    },
+    {
+      name: "Proyectos",
+      color: "#f33a2d",
+      to: "proyectos",
+      onshow: false,
+    },
+  ]);
   const [toggle, setToggle] = useState(false);
   const [showNav, setShowNav] = useState(true);
 
@@ -83,11 +93,17 @@ const NavBar = () => {
           </BtnNavBar>
         </Bar>
         <Nav toggle={toggle}>
-          {Navegation.map((item) => (
-            <NavElement key={item.color} onClick={handleToggle}>
-              <ElementLink color={item.color} to={item.to}>
-                {item.name}
-              </ElementLink>
+          {setting.map((item) => (
+            <NavElement
+              key={item.color}
+              onshow={item.onshow}
+              onClick={() => {
+                const element = document.getElementById(item.to);
+                element?.scrollIntoView({ behavior: "smooth" });
+                handleToggle;
+              }}
+            >
+              <ElementLink color={item.color}>{item.name}</ElementLink>
             </NavElement>
           ))}
         </Nav>

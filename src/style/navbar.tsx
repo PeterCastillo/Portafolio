@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { ElementLinkProps, MenuProps } from "../types/propsStyle";
-import { Link } from "react-router-dom";
 
 export const NavContainer = styled.div<{show: boolean}>`
   border-bottom: solid 2px rgb(127, 141, 170);
@@ -10,7 +9,7 @@ export const NavContainer = styled.div<{show: boolean}>`
   animation: fateNav 1.5s ease;
   position: fixed;
   width: 100vw;
-  transition: all 150ms ease-in-out;
+  transition: top 150ms ease-in-out;
   top: ${(props) => props.show ? "0" : "-100%"}
   /* https://libardo.vercel.app/ */
 `;
@@ -22,7 +21,7 @@ export const Navbar = styled.nav<MenuProps>`
   max-height: 4rem;
   margin: auto;
   transition: all 250ms ease-in-out;
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 775px) {
     ${(props) => props.toggle && "max-height: 50rem;"}
     flex-direction: column;
   }
@@ -64,7 +63,7 @@ export const Nav = styled.ul<MenuProps>`
   align-items: center;
   gap: 0.6rem;
   font-size: 1rem;
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 775px) {
     /* ${(props) => !props.toggle && "transform: translateY(-100%)"}; */
     /* ${(props) => props.toggle && "transition: all 200ms ease-out;"}; */
     max-height: 0rem;
@@ -78,18 +77,19 @@ export const Nav = styled.ul<MenuProps>`
     margin: 0rem;
   }
 `;
-export const NavElement = styled.li`
+export const NavElement = styled.li<{onshow: boolean}>`
   list-style: none;
   display: inline-block;
   height: 4rem;
   transition: all 1s ease-in-out;
-  @media screen and (max-width: 680px) {
+  ${(props) => props.onshow && "background-color: red;"}
+  @media screen and (max-width: 775px) {
     height: 3rem;
     width: 100%;
   }
 `;
 
-export const ElementLink = styled(Link)<ElementLinkProps>`
+export const ElementLink = styled.div<ElementLinkProps>`
   text-decoration: none;
   display: inline-block;
   height: 100%;
@@ -100,12 +100,14 @@ export const ElementLink = styled(Link)<ElementLinkProps>`
   color: rgb(127, 141, 170);
   transition: all 120ms ease;
   font-weight: bold;
+  cursor: pointer;
+  user-select: none;
   &:hover {
     border-bottom: solid 2px ${(props) => props.color};
     background: linear-gradient(rgba(5, 7, 12, 0.1), rgba(38, 40, 46, 0.1));
     color: ${(props) => props.color};
   }
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 775px) {
     justify-content: center;
     border-radius: 1rem;
     height: 3rem;
@@ -150,7 +152,7 @@ export const Bar = styled.div`
   background-color: rgb(255, 255, 255);
   padding: 0rem 1rem;
   padding-left: 0rem;
-  @media screen and (max-width: 680px) {
+  @media screen and (max-width: 775px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -160,7 +162,7 @@ export const Bar = styled.div`
 export const BtnNavBar = styled.div`
   cursor: pointer;
   padding: 0.5rem;
-  @media screen and (min-width: 680px) {
+  @media screen and (min-width: 775px) {
     display: none;
   }
 `;

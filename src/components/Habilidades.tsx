@@ -146,7 +146,7 @@ const Habilidad = ({ info }: { info: IHabilidad }) => {
 
 const Habilidades = () => {
   return (
-    <HabilidadesContainer>
+    <HabilidadesContainer id="habilidades">
       <Title>Habilidades</Title>
       <HabilidadesList>
         {habilidades.map((item, index) => (

@@ -68,11 +68,11 @@ const experiencia = [
 
 const Experiencia = () => {
   return (
-    <Contenedor>
+    <Contenedor id="experiencia">
       <Title>Experiencia</Title>
       <ExperienciaContainer>
         {experiencia.map((item, index) => (
-          <ExperienciaItem>
+          <ExperienciaItem key={index}>
             <Type>
               <div>
                 <span>{item.puesto}</span>
@@ -83,7 +83,7 @@ const Experiencia = () => {
             <ul>{item.descripcion.map((item,i) => <li key={i}>{item}</li>)}</ul>
             <Tecs>
                 {
-                    item.stack.map((tec,i) => <div><span>{tec.name}</span>{tec.logo}</div>)
+                    item.stack.map((tec,i) => <div key={i}><span>{tec.name}</span>{tec.logo}</div>)
                 }
             </Tecs>
           </ExperienciaItem>

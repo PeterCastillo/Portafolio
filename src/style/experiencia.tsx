@@ -3,8 +3,8 @@ export const Contenedor = styled.div`
   max-width: 1000px;
   margin: auto;
   font-family: "Inter", sans-serif;
-  margin-top: 5rem;
   padding: 1rem;
+  padding-top: 5rem;
 `;
 export const Title = styled.span`
   font-size: 2rem;
@@ -19,7 +19,7 @@ export const ExperienciaContainer = styled.div`
   gap: 1rem;
 `;
 export const ExperienciaItem = styled.div`
-flex: 1 1 30rem;
+  flex: 1 1 30rem;
   border: 1px solid #d6d6d6;
   border-radius: 5px;
   padding: 1rem;
@@ -30,8 +30,9 @@ flex: 1 1 30rem;
     flex-direction: column;
     gap: 0.3rem;
     li {
-        font-size: 0.8rem;
-        letter-spacing: -0.5px;
+      color: rgb(127, 141, 170);
+      font-size: 1rem;
+      letter-spacing: -0.5px;
     }
   }
 `;
@@ -48,6 +49,7 @@ export const Type = styled.div`
     display: flex;
     align-items: start;
     flex-direction: column;
+    color: rgb(127, 141, 170);
     span {
       &:last-child {
         font-size: 0.6rem;
@@ -58,9 +60,11 @@ export const Type = styled.div`
 `;
 
 export const Tecs = styled.div`
-display: flex;
-gap: 1rem;
-div {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
     display: flex;
     gap: 0.5rem;
     align-items: center;
@@ -70,5 +74,11 @@ div {
     color: rgb(25, 85, 188);
     cursor: pointer;
     user-select: none;
-}
-`
+    span {
+      font-size: 0.8rem;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+  }
+`;
