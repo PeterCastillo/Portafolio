@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   Bar,
   BtnNavBar,
@@ -36,13 +36,45 @@ const Navegation = [
 const nombre = "<PcDev/>";
 const NavBar = () => {
   const [toggle, setToggle] = useState(false);
+  const [showNav, setShowNav] = useState(true);
 
   const handleToggle = () => {
     setToggle(!toggle);
   };
 
+  useEffect(() => {
+    let prevScrollpos = window.pageYOffset;
+    let timeoutId: any;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+
+      if (prevScrollpos > currentScrollPos) {
+        setShowNav(true);
+      } else {
+        setShowNav(false);
+      }
+
+      timeoutId = setTimeout(() => {
+        setShowNav(true);
+      }, 200);
+
+      prevScrollpos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <NavContainer>
+    <NavContainer show={showNav}>
       <Navbar toggle={toggle}>
         <Bar>
           <Nombre>{nombre}</Nombre>

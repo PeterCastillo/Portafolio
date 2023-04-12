@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const IntroContainer = styled.div`
   align-items: center;
+  margin-top: 5rem;
   padding: 5rem 0rem;
   @media screen and (max-width: 900px) {
     padding: 3rem 0rem;

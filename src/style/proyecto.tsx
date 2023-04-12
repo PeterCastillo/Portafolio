@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const ProyectStyle = styled.div`
     display: flex;
-    background-color:rgba(241, 241, 241, 0.664);
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 5px;
     gap: 1rem;
     /* flex-wrap: wrap; */
-    color: rgb(52, 52, 52);
+    color: rgb(73, 73, 73);
+    border: solid 1px rgb(127, 141, 170);
     /* -webkit-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
     box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
@@ -64,7 +64,7 @@ export const ProyectTecs = styled.div`
 `
 export const Tec = styled.a`
     font-size: 2rem;
-    color: black;
+    color: #3d3d3d;
 `
 export const Links = styled.div`
     align-self: flex-end;

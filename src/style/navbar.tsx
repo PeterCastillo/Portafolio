@@ -2,11 +2,17 @@ import styled from "styled-components";
 import { ElementLinkProps, MenuProps } from "../types/propsStyle";
 import { Link } from "react-router-dom";
 
-export const NavContainer = styled.div`
+export const NavContainer = styled.div<{show: boolean}>`
   border-bottom: solid 2px rgb(127, 141, 170);
   background-color: white;
+  z-index: 5;
   font-family: "Inter", sans-serif;
   animation: fateNav 1.5s ease;
+  position: fixed;
+  width: 100vw;
+  transition: all 150ms ease-in-out;
+  top: ${(props) => props.show ? "0" : "-100%"}
+  /* https://libardo.vercel.app/ */
 `;
 export const Navbar = styled.nav<MenuProps>`
   max-width: 1000px;
