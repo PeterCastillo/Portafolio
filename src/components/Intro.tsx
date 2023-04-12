@@ -10,7 +10,7 @@ import {
   SeccionIntro,
   Text,
 } from "../style/intro";
-import CV from "../assets/PETER_CASTILLO_CV.pdf"
+import CV from "../assets/CV.pdf"
 
 import { FiGithub } from "react-icons/fi";
 import { SiGmail } from "react-icons/si";
