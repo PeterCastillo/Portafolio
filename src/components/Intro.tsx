@@ -17,6 +17,7 @@ import { CgNotes } from "react-icons/cg";
 import Estudios from "./Estudios";
 import Habilidades from "./Habilidades";
 import Proyectos from "./Proyectos";
+import Experiencia from "./Experiencia";
 
 
 const Intro = () => {
@@ -53,6 +54,7 @@ const Intro = () => {
           <img src={peter} alt="Peter Castillo" />
         </Foto>
       </SeccionIntro>
+      <Experiencia/>
       <Estudios/>
       <Habilidades/>
       <Proyectos/>

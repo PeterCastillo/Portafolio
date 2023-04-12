@@ -7,7 +7,7 @@ export const ProyectStyle = styled.div`
     gap: 1rem;
     /* flex-wrap: wrap; */
     color: rgb(73, 73, 73);
-    border: solid 1px rgb(127, 141, 170);
+    border: 1px solid #d6d6d6;
     /* -webkit-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
     -moz-box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
     box-shadow: 0px 0px 10px 0px rgba(127,141,170,1);
