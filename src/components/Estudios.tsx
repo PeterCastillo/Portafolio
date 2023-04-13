@@ -47,8 +47,8 @@ const grades: Array<EstudioTypes> = [
     fechaInicio: "2019",
     fechaFinal: "2021",
     estudioInfo: [
-      "Practicar la fluides y entoncion.",
-      "Realizar conversasiones y reportes en ingles.",
+      "Practicar la fluidez y entoncion.",
+      "Realizar conversaciones y reportes en ingles.",
       "Crear presentaciones en Ingles.",
     ],
     estudioWeb: "https://www.icpna.edu.pe/",
